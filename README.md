@@ -108,4 +108,4 @@
 
 ## Utils
 * TDD all tests
-* setUser, getUser, generateUser, findById, randomNumber, isEven 
+* setUser, userProfile, getUser, generateUser, randomNumber, isEven, gameScore, toUSD
