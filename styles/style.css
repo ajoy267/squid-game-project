@@ -1,0 +1,37 @@
+header {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    height: 250px;
+    width: 400px;
+}
+
+input {
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+
+button {
+    display: flex;
+    margin: 30px auto;
+}
+
+footer {
+    display: flex;
+    justify-content: right;
+    margin-right: 50px;
+}
