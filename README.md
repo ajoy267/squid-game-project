@@ -48,7 +48,9 @@
 ### HTML 
 * H1 header - About Us
 * Main section which contains H3 with our name, image, and small biography
-* Foorter that has an a href back to the main page 
+* Footer that has an a href back to the main page 
+* STRETCH GOAL - Add epic transition to images
+* STRETCH GOAL - Add lessgo game master image
 
 ## Opener
 ### HTML
