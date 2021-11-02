@@ -1,0 +1,14 @@
+body {
+    background-image: url('../assets/lobby.jpg');
+    background-position: fixed;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    margin-left: 8%;
+}
