@@ -1,0 +1,62 @@
+body {
+    background-image: url('../assets/bridge.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+header {
+    text-align: center;
+}
+
+#figure {
+    height: 200px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.set {
+    display: flex;
+    flex-direction: column;
+}
+
+label img {
+    width: 200px;
+    height: 200px;
+}
+
+input[type=radio]:checked + img {
+    width: 200px;
+    height: 200px;
+}
+
+footer {
+    display: flex;
+}
+input {
+    display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.end {
+    width: 100px;
+    margin: auto;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
