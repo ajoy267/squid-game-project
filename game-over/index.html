@@ -10,6 +10,31 @@
     <title>Game Over</title>
 </head>
 <body>
+    <header>
+        <div class="current-balance">
+            <h1>Current Balance</h1>
+            <p>-$ <span id="balance"></span></p>
+        </div>
+        <div class="stats">
+            <h2>Stats</h2>
+            <p>Games Won: <span id="games-won"></span></p>
+            <p>Games Lost: <span id="games-lost"></span></p>
+        </div>
+    </header>
+    <main>
+        <section id="winner" class="hidden">
+            <p>Congratulations on successfully completing the Alchemy
+                Squid Game. Good Luck on graduating from Alchemy!</p>
+        </section>
+        <section id="isa">
+            <p>Sorry Player #<span id="number"></span> you have lost. 
+            There's only one way you can pay off this debt!</p>
+            <button id="sign-isa">Sign Another ISA</button>
+        </section>
+        <section id="start-over">
+            <button id="start-over-btn">Start Over</button>
+        </section>
+    </main>
     <script src="./game-over.js" type="module"></script>
 </body>
 </html>
