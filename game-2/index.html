@@ -12,13 +12,13 @@
 <body>
     <h1>The Marble Game</h1>
 
-    <p>Number of guesses left: <span id="guesses-left"></span></p>
+    <p>Number of tries remaining: <span id="guesses-remain"></span></p>
 
     <label>
         <select name="odd-even" id="odd-even">
-            <option value="guess">Guess</option>
-            <option value="odd">Odd</option>
-            <option value="even">Even</option>
+            <option >Guess</option>
+            <option id="odd" value="odd">Odd</option>
+            <option id="even" value="even">Even</option>
         </select>
         
         <button id="guess">Make your guess</button>
