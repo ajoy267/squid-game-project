@@ -26,13 +26,23 @@ export function toUSD(number){
 
 export function userProfile() {
     const user = getUser();
-
+    
     const money = document.getElementById('money-total');
     money.textContent = user.money;
-
+    
     const number = document.getElementById('player-number');
     number.textContent = user.number;
 
     const games = document.getElementById('games-survived');
     games.textContent = user.games;
+
+}
+
+export function openUser(){
+    const user = getUser();
+    const name = document.getElementById('input-name');
+    name.textContent = user.name;
+    
+    const number = document.getElementById('player-number');
+    number.textContent = user.number;
 }

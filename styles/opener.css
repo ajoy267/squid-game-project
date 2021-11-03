@@ -3,4 +3,6 @@ body {
     color: white;
     background-image: url('../assets/squid-logo.png');
     background-repeat: no-repeat;
+    width: 400px;
+    height: auto;
 }
