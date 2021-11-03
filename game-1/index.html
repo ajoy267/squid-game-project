@@ -12,16 +12,24 @@
 <body>
     <header>
         <h2>Red Light, Green Light!</h2>
+        <div>
+            <img id="doll" class="hidden doll" src="../assets/doll.jpeg" alt="squid game doll">
+        </div>
+        <!-- <div id="laser">
+            <img class="hidden laser" src="../assets/laserdoll.jpg" alt="squid game laser">
+        </div> -->
     </header>
 
     <form>
         <main>
-            <span id="light">red</span>
+            <span id="light"></span>
             <img id="player-img" src="../assets/run.png" alt="guy running">
         </main>
 
         <footer>
             <input id="run-btn" type="button" value="Click Here">
+            <p>Tries Remaining: <span id="attempt-span"></span> </p>
+            <button id="return-home" class="hidden">Return Home</button>
         </footer>
     </form>
 
