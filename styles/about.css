@@ -1,4 +1,4 @@
-header {
+header, footer {
     display: flex;
     justify-content: center;
 }
@@ -28,4 +28,10 @@ img {
 
 img:hover {
     cursor: pointer;
+}
+
+a {
+    margin-bottom: 50px;
+    font-size: 2rem;
+    color: blue;
 }
