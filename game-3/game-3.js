@@ -1,4 +1,4 @@
-import { setUser, getUser, toUSD } from "../utils.js";
+import { setUser, getUser } from '../utils.js';
 
 const glass1 = document.getElementById('glass-1');
 const glass2 = document.getElementById('glass-2');
@@ -20,8 +20,6 @@ const real2 = document.getElementById('real-2');
 const real3 = document.getElementById('real-3');
 const real4 = document.getElementById('real-4');
 const real5 = document.getElementById('real-5');
-
-const row1 = document.querySelectorAll('.row-1');
 
 const figure = document.getElementById('figure');
 
@@ -193,7 +191,7 @@ endGame.addEventListener('click', () => {
         setUser(user);
     } else {
         user.games++;
-        user.money+=8000.00;
+        user.money += 8000;
         setUser(user);
     }
 
