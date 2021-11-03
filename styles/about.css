@@ -1,3 +1,31 @@
+header {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.person {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    height: auto;
+    width: 500px;
+    margin-left: 150px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+}
+
 img:hover {
     cursor: pointer;
 }
