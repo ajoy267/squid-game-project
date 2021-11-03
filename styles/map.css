@@ -10,4 +10,17 @@ body {
 h2 {
     text-align: center;
     margin-left: 8%;
+    font-size: 1.5rem;
+}
+
+#player-stats {
+    margin-left: 10%;
+    font-size: 1.2rem;
+}
+
+button {
+    display: flex;
+    margin: 17% auto;
+    width: 145px;
+    font-size: 1.5rem
 }
