@@ -41,6 +41,22 @@ input {
     display: none;
 }
 
-/* .row-2, .row-3, .row-4, .row-5 {
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
-} */
+.end {
+    width: 100px;
+    margin: auto;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}

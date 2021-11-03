@@ -5,7 +5,8 @@ export function generateUser(formData){
         money: toUSD(-24000),
         name: formData.get('name'),
         games: 0, 
-        totalClicks: 0
+        totalClicks: 0,
+        gamesLost: 0,
     };
 }
 
