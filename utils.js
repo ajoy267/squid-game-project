@@ -3,7 +3,9 @@ export function generateUser(formData){
     return {
         number: Math.ceil(Math.random() * 467),
         money: toUSD(-24000),
-        name: formData.get('name')
+        name: formData.get('name'),
+        games: 0, 
+        totalClicks: 0
     };
 }
 
@@ -20,4 +22,17 @@ export function getUser(){
 export function toUSD(number){
     return number.toLocaleString('en-us', { style: 'currency', currency: 'USD' });
 
+}
+
+export function userProfile() {
+    const user = getUser();
+
+    const money = document.getElementById('money-total');
+    money.textContent = user.money;
+
+    const number = document.getElementById('player-number');
+    number.textContent = user.number;
+
+    const games = document.getElementById('games-survived');
+    games.textContent = user.games;
 }
