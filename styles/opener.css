@@ -1,8 +1,27 @@
 body {
     background-color: black;
     color: white;
-    background-image: url('../assets/squid-logo.png');
-    background-repeat: no-repeat;
-    width: 400px;
+    font-family: 'Henny Penny', cursive;
+    font-size: 2rem;
+}
+
+img {
+    display: flex;
+    margin: auto;
+    width: 750px;
     height: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}
+
+#input-name {
+    margin-left: 5px;
 }
