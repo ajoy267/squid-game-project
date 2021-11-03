@@ -2,7 +2,7 @@ export function generateUser(formData){
     // This function will return a userObject using data from formData
     return {
         number: Math.ceil(Math.random() * 467),
-        money: toUSD(-24000),
+        money: -24000,
         name: formData.get('name'),
         games: 0, 
         totalClicks: 0,
@@ -18,11 +18,6 @@ export function setUser(userObject){
 export function getUser(){
     const userString = localStorage.getItem('USER');
     return JSON.parse(userString); 
-}
-
-export function toUSD(number){
-    return number.toLocaleString('en-us', { style: 'currency', currency: 'USD' });
-
 }
 
 export function userProfile() {

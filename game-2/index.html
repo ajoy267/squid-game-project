@@ -10,22 +10,29 @@
     <title>Marbles</title>
 </head>
 <body>
-    <h1>The Marble Game</h1>
+    <header>
+        <h1>The Marble Game</h1>
 
-    <p>Number of tries remaining: <span id="guesses-remain"></span></p>
+        <p>Number of tries remaining: <span id="guesses-remain"></span></p>
 
-    <label>
-        <select name="odd-even" id="odd-even">
-            <option >Guess</option>
-            <option id="odd" value="odd">Odd</option>
-            <option id="even" value="even">Even</option>
-        </select>
+        <p>Number of correct guesses: <span id="correct-guesses"></span></p>
+    </header>
+    <main>
+        <label>
+            <select name="odd-even" id="odd-even">
+                <option >Guess</option>
+                <option id="odd" value="odd">Odd</option>
+                <option id="even" value="even">Even</option>
+            </select>
         
-        <button id="guess">Make your guess</button>
+            <button id="guess">Make your guess</button>
 
-        <span id="result-span">Result</span>
-    </label>
-    
+            <span id="result-span">Result</span>
+        </label>
+    </main>
+    <footer>
+        <button id="return" class="hidden">Return to Sleeping Quarters</button>
+    </footer>
     <script src="./game-2.js" type="module"></script>
 </body>
 </html>

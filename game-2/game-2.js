@@ -1,47 +1,69 @@
+import { getUser, setUser } from '../utils.js';
+
 const attemptSpan = document.getElementById('guesses-remain');
-const dropDown = document.getElementById('odd-even');
 const guessBtn = document.getElementById('guess');
 const resultSpan = document.getElementById('result-span');
 const odd = document.getElementById('odd');
 const even = document.getElementById('even');
+const returnHome = document.getElementById('return');
+const correctGuessesSpan = document.getElementById('correct-guesses');
 
 let totalAttempts = 2;
+attemptSpan.textContent = totalAttempts;
 
-// let things = ['odd', 'even'];
-// let thing = things[Math.floor(Math.random() * things.length)];
-
-
-// console.log(thing);
-
+let correctGuesses = 0;
+correctGuessesSpan.textContent = correctGuesses;
 
 
 guessBtn.addEventListener('click', ()=> {
-    // check if userGuess === thing
     let things = ['odd', 'even'];
     let thing = things[Math.floor(Math.random() * things.length)];
-    console.log(thing);
 
     const oddGuess = odd.value;
     const evenGuess = even.value;
 
     if (oddGuess === thing) {
+        correctGuesses++;
+        correctGuessesSpan.textContent = correctGuesses;
         resultSpan.textContent = 'You guessed correct! Select odd or even and guess again!';
     }
 
     else if (oddGuess !== thing) {
+        totalAttempts--;
+        attemptSpan.textContent = totalAttempts;
         resultSpan.textContent = 'You guessed incorrect.. Select odd or even and guess again, but guess correctly!';
     } 
 
     else if (evenGuess === thing) {
+        correctGuesses++;
+        correctGuessesSpan.textContent = correctGuesses;
         resultSpan.textContent = 'You guessed correct! Select odd or even and guess again!';
     }
     else if (evenGuess !== thing) {
+        totalAttempts--;
+        attemptSpan.textContent = totalAttempts;
         resultSpan.textContent = 'You guessed incorrect.. Select odd or even and guess again, but guess correctly!';
     }
-    // if yes display win message --> else display loose message
-    
-    // if not correct decrease number of tries remaining
 
-    // after 3 correct answers re-direct to map and +8K -- if 3 incorrect also redirect to map page
-    
+    if (totalAttempts <= 0) {
+        returnHome.classList.remove('hidden');
+        guessBtn.disabled = true;
+    } else if (correctGuesses === 3) {
+        returnHome.classList.remove('hidden');
+        guessBtn.disabled = true;
+    }
+});
+
+returnHome.addEventListener('click', () => {
+    const user = getUser();
+
+    if (totalAttempts === 0) {
+        user.gamesLost++;
+        setUser(user);
+    } else if (correctGuesses === 3) {
+        user.games++;
+        user.money += 8000;
+        setUser(user);
+    }
+    window.location.replace('../map');
 });
