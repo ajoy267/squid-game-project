@@ -10,6 +10,22 @@
     <title>Marbles</title>
 </head>
 <body>
+    <h1>The Marble Game</h1>
+
+    <p>Number of guesses left: <span id="guesses-left"></span></p>
+
+    <label>
+        <select name="odd-even" id="odd-even">
+            <option value="guess">Guess</option>
+            <option value="odd">Odd</option>
+            <option value="even">Even</option>
+        </select>
+        
+        <button id="guess">Make your guess</button>
+
+        <span id="result-span">Result</span>
+    </label>
+    
     <script src="./game-2.js" type="module"></script>
 </body>
 </html>
