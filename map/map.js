@@ -1,17 +1,21 @@
-import { userProfile } from '../utils.js';
+import { userProfile, getUser, setUser } from '../utils.js';
 
 const startButton = document.getElementById('start-button');
 
 userProfile();
 
-let totalClicks = 0;
-
 startButton.addEventListener('click', () => {
-    totalClicks++;
+    const user = getUser();
 
-    if (totalClicks <= 1){
+    user.totalClicks++;
+
+    setUser(user);
+
+    const updatedUser = getUser();
+    
+    if (updatedUser.totalClicks <= 1){
         window.location.replace('../game-1');
-    } else if (totalClicks === 2) {
+    } else if (updatedUser.totalClicks === 2) {
         window.location.replace('../game-2');
     } else {
         window.location.replace('../game-3');
