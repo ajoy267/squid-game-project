@@ -1,4 +1,38 @@
-img{ 
+.hidden {
+    display: none;
+}
+
+body {
+    background-image: url("../assets/redlight.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+header,
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.doll,
+.laser {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+#player-img {
     height: auto;
     width: 100px;
+    margin-bottom: 100px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
 }

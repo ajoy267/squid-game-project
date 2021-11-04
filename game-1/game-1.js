@@ -1,8 +1,16 @@
-console.log('hello world');
+import { getUser, setUser } from '../utils.js';
+
 const light = document.getElementById('light');
+const doll = document.getElementById('doll');
+const laser = document.getElementById('laser');
 // const imgObj = document.getElementById('player-img');
 const runBtn = document.getElementById('run-btn');
+const returnBtn = document.getElementById('return-home');
 let imgObj = document.getElementById('player-img');
+
+const attemptSpan = document.getElementById('attempt-span');
+const winMessage = document.getElementById('win-message');
+const loseMessage = document.getElementById('lose-message');
 // write a function for a button that on click will -->
 // shift an img to the right each time the button is clicked.
 // --If button clicked while light red user lose/reset
@@ -15,10 +23,68 @@ function init() {
 }
 
 function moveRight() {
-    imgObj.style.left = parseInt(imgObj.style.left) + 16 + 'px';
+    imgObj.style.left = parseInt(imgObj.style.left) + 30 + 'px';
 }
 window.onload = init;
+
+let currentColor = 'green'
+light.textContent = currentColor;
+
+let interval = setInterval(function() {
+    if (currentColor === 'red') {
+        currentColor = 'green';
+        doll.src = '../assets/doll.jpeg';
+    } else {
+        currentColor = 'red';
+        doll.src = '../assets/laserdoll.jpg';
+    } 
+    light.textContent = currentColor;
+}, 5000
+);
+
+let totalAttempts = 2;
+attemptSpan.textContent = totalAttempts;
+
+let totalClicks = 0;
+
 runBtn.addEventListener('click', () => {
     moveRight();
     console.log('clicks');
+    totalClicks++
+    if (totalClicks >= 35) {
+        runBtn.disabled = true;
+        returnBtn.classList.remove('hidden');
+        winMessage.classList.remove('hidden');
+    }
+    if (currentColor === 'red') {
+        totalAttempts--;
+        if (totalAttempts === 1) {
+            imgObj.src = '../assets/onearm.png';
+        }
+        if (totalAttempts === 0) {
+            imgObj.src = '../assets/oneleg.png';
+        }
+        imgObj.style.left = '0px';
+        attemptSpan.textContent = totalAttempts;
+        if (totalAttempts <= 0) {
+            runBtn.disabled = true;
+            returnBtn.classList.remove('hidden');
+            loseMessage.classList.remove('hidden');
+        }
+    } 
+    // if clicked while red, tries--
+    // span that tells you that you clicked during red
 });
+
+returnBtn.addEventListener('click', () => {
+    const user = getUser();
+        if (totalAttempts === 0) {
+            user.gamesLost++;
+            setUser(user);
+        } else {
+            user.games++;
+            user.money += 8000;
+            setUser(user);
+        }
+        window.location.replace('../map');
+})

@@ -195,5 +195,5 @@ endGame.addEventListener('click', () => {
         setUser(user);
     }
 
-    window.location.replace('../game-over');
+window.location.replace('../game-over');
 });
