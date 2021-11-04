@@ -7,15 +7,21 @@
 body {
     font-family: sans-serif;
     background-image: url("../assets/bathroom.jpeg");
-    background-position: cover;
-    background-size: contain;
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 
-h1,
+
 h3 {
     font-family: "Azonix";
+    font-size: 1.7rem;
+}
+
+h1{
+    font-family: "Azonix";
+    font-size: 2rem;
 }
 
 header,
@@ -56,4 +62,7 @@ a {
     font-size: 2rem;
     color: blue;
     margin-bottom: 50px;
+}
+p{
+    font-size: 1.5rem
 }
