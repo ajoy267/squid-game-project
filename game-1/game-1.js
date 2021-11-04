@@ -47,7 +47,6 @@ let totalClicks = 0;
 
 runBtn.addEventListener('click', () => {
     moveRight();
-    console.log('clicks');
     totalClicks++;
     if (totalClicks >= 53) {
         runBtn.disabled = true;
@@ -56,6 +55,7 @@ runBtn.addEventListener('click', () => {
     }
     if (currentColor === 'red') {
         totalAttempts--;
+        totalClicks = 0;
         if (totalAttempts === 1) {
             imgObj.src = '../assets/onearm.png';
         }
