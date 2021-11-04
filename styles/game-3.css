@@ -1,0 +1,95 @@
+@font-face {
+    font-family: Azonix;
+    src: url("../assets/Azonix.woff"),
+        url("../assets/Azonix.woff2") format("woff");
+}
+
+body {
+    background-image: url("../assets/bridge.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: sans-serif;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: Azonix;
+    color: black;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    font-size: 3rem;
+}
+
+header {
+    text-align: center;
+}
+
+#figure {
+    height: 200px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10%;
+}
+
+.set {
+    display: flex;
+    flex-direction: column;
+}
+
+label img {
+    width: 200px;
+    height: 200px;
+}
+
+input[type="radio"]:checked + img {
+    width: 200px;
+    height: 200px;
+}
+
+footer {
+    display: flex;
+}
+input {
+    display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.end {
+    width: 100px;
+    margin: auto;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.hidden {
+    display: none;
+}
+h4{
+    font-size: 1.5rem;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+button{
+    display: flex;
+    font-size: 1.5rem;
+    width: 125px;
+    background-color: transparent;
+    border: 4px solid red;
+    border-radius: 15px;
+    color: red;
+}

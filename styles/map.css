@@ -1,0 +1,38 @@
+@font-face {
+    font-family: Azonix;
+    src: url("../assets/Azonix.woff"),
+        url("../assets/Azonix.woff2") format("woff");
+}
+
+body {
+    background-image: url("../assets/lobby.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: white;
+    font-family: "Azonix";
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+h2 {
+    text-align: center;
+    margin-left: 5%;
+    font-size: 2rem;
+}
+
+#player-stats {
+    margin-left: 16%;
+    font-size: 1.5rem;
+}
+
+button {
+    display: flex;
+    margin: 14% 49% 51%;
+    width: 145px;
+    font-size: 1.5rem;
+    background-color: black;
+    border: 2px solid black;
+    color: yellow;
+    border-radius: 5px;
+}

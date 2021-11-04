@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/home.css">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/map.css">
     <title>Map Page</title>
 </head>
 <body>
+    <main>
+        <section id="money-section">
+            <h2>Total Money: <span id="money-total"></span></h2>
+        </section>
+        <section id="player-stats">
+            <h3>Welcome Player #<span id="player-number">007</span></h3>
+            <p>Number of games survived: <span id="games-survived">0</span></p>
+        </section>
+        <button id="start-button" type="button">Start Game</button>
+    </main>
+    
     <script src="./map.js" type="module"></script>
 </body>
 </html>

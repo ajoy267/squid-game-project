@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/home.css">
-    <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/game-2.css">
-    <title>Marbles</title>
-</head>
-<body>
-    <script src="./game-2.js" type="module"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../styles/reset.css" />
+        <link rel="stylesheet" href="../styles/game-2.css" />
+        <title>Marbles</title>
+    </head>
+    <body>
+        <header>
+            <h1>The Marble Game</h1>
+            <p>
+                In this game, guess whether the number the computer generated<br />
+                is 'odd' or 'even'. To win, guess correctly three times.
+            </p>
+
+            <p>Number of tries remaining: <span id="guesses-remain"></span></p>
+
+            <p>Number of correct guesses: <span id="correct-guesses"></span></p>
+        </header>
+        <main>
+            <div>
+                <label>
+                    <select name="odd-even" id="odd-even">
+                        <option>Guess</option>
+                        <option id="odd" value="odd">Odd</option>
+                        <option id="even" value="even">Even</option>
+                    </select>
+
+                    <button id="guess">Make your guess</button>
+                </label>
+            </div>
+            <div>
+                <span id="result-span"></span>
+            </div>
+        </main>
+        <footer>
+            <button id="return" class="hidden">
+                Return to Sleeping Quarters
+            </button>
+        </footer>
+        <script src="./game-2.js" type="module"></script>
+    </body>
 </html>
