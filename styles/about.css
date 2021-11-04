@@ -6,6 +6,11 @@
 
 body {
     font-family: sans-serif;
+    background-image: url("../assets/bathroom.jpeg");
+    background-position: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 
 h1,
@@ -31,7 +36,7 @@ main {
 
 img {
     height: auto;
-    width: 500px;
+    width: 200px;
     margin-left: 150px;
 }
 
@@ -39,7 +44,8 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 100px;
+    margin-left: 30px;
+    margin-right: 150px;
 }
 
 img:hover {
