@@ -49,7 +49,7 @@ runBtn.addEventListener('click', () => {
     moveRight();
     console.log('clicks');
     totalClicks++;
-    if (totalClicks >= 35) {
+    if (totalClicks >= 53) {
         runBtn.disabled = true;
         returnBtn.classList.remove('hidden');
         winMessage.classList.remove('hidden');
@@ -84,5 +84,6 @@ returnBtn.addEventListener('click', () => {
         user.money += 8000;
         setUser(user);
     }
+    console.log('hello');
     window.location.replace('../map');
 });
