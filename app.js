@@ -9,5 +9,5 @@ userForm.addEventListener('submit', (e) => {
     const user = generateUser(formData);
 
     setUser(user);
-    window.location.replace('../opener');
+    window.location.replace('./opener');
 });
