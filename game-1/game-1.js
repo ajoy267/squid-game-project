@@ -84,6 +84,5 @@ returnBtn.addEventListener('click', () => {
         user.money += 8000;
         setUser(user);
     }
-    console.log('hello');
     window.location.replace('../map');
 });
