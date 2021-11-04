@@ -1,7 +1,14 @@
 @font-face {
     font-family: Azonix;
-    src: url("../assets/Azonix.woff"),
-        url("../assets/Azonix.woff2") format("woff");
+    src: url('../assets/Azonix.woff'),
+        url('../assets/Azonix.woff2') format('woff');
+}
+
+body {
+    font-family: sans-serif;
+    color: black;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    text-align: center;
 }
 
 h1,
@@ -9,10 +16,14 @@ h2 {
     font-family: Azonix;
 }
 
-body {
-    font-family: sans-serif;
-}
-
 .hidden {
     display: none;
+}
+
+button {
+    color: yellow;
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 5px;
+    font-size: 1.2rem;
 }

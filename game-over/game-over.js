@@ -22,8 +22,14 @@ gamesLost.textContent = user.gamesLost;
 if (user.games >= 3) {
     winSection.classList.remove('hidden');
     loseSection.classList.add('hidden');
+    document.body.style.background = `url('../assets/piggy.jpeg') no-repeat`;
+    document.body.style.backgroundSize = `cover`;
+    document.body.style.backgroundPosition = `center`;
 } else if (user.games < 3) {
     playerNumber.textContent = user.number;
+    document.body.style.background = `url('../assets/coffin.jpg') no-repeat`;
+    document.body.style.backgroundSize = `cover`;
+    document.body.style.backgroundPosition = `center`;
 }
 
 isaBtn.addEventListener('click', () => {
