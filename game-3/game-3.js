@@ -39,7 +39,6 @@ document.getElementById('glass-8').disabled = true;
 document.getElementById('glass-9').disabled = true;
 document.getElementById('glass-10').disabled = true;
 
-
 glass1.addEventListener('click', () => {
     real1.src = '../assets/jumpglass.png';
     document.getElementById('glass-1').disabled = true;
@@ -58,10 +57,10 @@ glass2.addEventListener('click', () => {
     document.getElementById('glass-4').disabled = false;
     figure.src = '../assets/transparent.png';
     if (tries <= 0) {
-        resultMessage.textContent = 'lose';
+        resultMessage.textContent = 'You died, game over.';
         triesLeft.textContent = tries;
     } else {
-        resultMessage.textContent = 'win';
+        resultMessage.textContent = 'You made it across safely!';
         triesLeft.textContent = tries;
     }
 });
@@ -74,10 +73,10 @@ glass3.addEventListener('click', () => {
     document.getElementById('glass-5').disabled = false;
     document.getElementById('glass-6').disabled = false;
     if (tries <= 0) {
-        resultMessage.textContent = 'lose';
+        resultMessage.textContent = 'You died, game over.';
         triesLeft.textContent = tries;
     } else {
-        resultMessage.textContent = 'win';
+        resultMessage.textContent = 'You made it across safely!';
         triesLeft.textContent = tries;
     }
 });
@@ -101,7 +100,7 @@ glass5.addEventListener('click', () => {
     if (tries <= 0) {
         endGame.classList.remove('hidden');
         resultMessage.classList.remove('hidden');
-        resultMessage.textContent = 'lose';
+        resultMessage.textContent = 'You died, game over.';
         triesLeft.textContent = tries;
         document.getElementById('glass-6').disabled = true;
         document.getElementById('glass-7').disabled = true;
@@ -109,7 +108,7 @@ glass5.addEventListener('click', () => {
         document.getElementById('glass-9').disabled = true;
         document.getElementById('glass-10').disabled = true;
     } else {
-        resultMessage.textContent = 'win';
+        resultMessage.textContent = 'You made it across safely!';
         triesLeft.textContent = tries;
     }
 });
@@ -145,12 +144,12 @@ glass8.addEventListener('click', () => {
     if (tries <= 0) {
         endGame.classList.remove('hidden');
         resultMessage.classList.remove('hidden');
-        resultMessage.textContent = 'lose';
+        resultMessage.textContent = 'You died, game over.';
         triesLeft.textContent = tries;
         document.getElementById('glass-9').disabled = true;
         document.getElementById('glass-10').disabled = true;
     } else {
-        resultMessage.textContent = 'win';
+        resultMessage.textContent = 'You made it across safely!';
         triesLeft.textContent = tries;
     }
 });
@@ -163,12 +162,12 @@ glass9.addEventListener('click', () => {
     if (tries <= 0) {
         endGame.classList.remove('hidden');
         resultMessage.classList.remove('hidden');
-        resultMessage.textContent = 'lose';
+        resultMessage.textContent = 'You died, game over.';
         triesLeft.textContent = tries;
     } else {
         endGame.classList.remove('hidden');
         resultMessage.classList.remove('hidden');
-        resultMessage.textContent = 'win';
+        resultMessage.textContent = 'You made it across safely!';
         triesLeft.textContent = tries;
     }
 });
@@ -184,10 +183,10 @@ glass10.addEventListener('click', () => {
     if (tries <= 0) {
         endGame.classList.remove('hidden');
         resultMessage.classList.remove('hidden');
-        resultMessage.textContent = 'lose';
+        resultMessage.textContent = 'You died, game over.';
         triesLeft.textContent = tries;
     } else {
-        resultMessage.textContent = 'win';
+        resultMessage.textContent = 'You made it across safely!';
         triesLeft.textContent = tries;
         endGame.classList.remove('hidden');
         resultMessage.classList.remove('hidden');
