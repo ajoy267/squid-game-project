@@ -53,6 +53,7 @@ glass2.addEventListener('click', () => {
     tries--;
     fake1.src = '../assets/broken-glass.png';
     document.getElementById('glass-1').disabled = true;
+    document.getElementById('glass-2').disabled = true;
     document.getElementById('glass-3').disabled = false;
     document.getElementById('glass-4').disabled = false;
     figure.src = '../assets/transparent.png';
@@ -68,6 +69,7 @@ glass2.addEventListener('click', () => {
 glass3.addEventListener('click', () => {
     tries--;
     fake2.src = '../assets/broken-glass.png';
+    document.getElementById('glass-3').disabled = true;
     document.getElementById('glass-4').disabled = true;
     document.getElementById('glass-5').disabled = false;
     document.getElementById('glass-6').disabled = false;
@@ -82,6 +84,7 @@ glass3.addEventListener('click', () => {
 
 glass4.addEventListener('click', () => {
     real2.src = '../assets/jumpglass.png';
+    document.getElementById('glass-3').disabled = true;
     document.getElementById('glass-4').disabled = true;
     document.getElementById('glass-5').disabled = false;
     document.getElementById('glass-6').disabled = false;
@@ -91,6 +94,7 @@ glass4.addEventListener('click', () => {
 glass5.addEventListener('click', () => {
     tries--;
     fake3.src = '../assets/broken-glass.png';
+    document.getElementById('glass-5').disabled = true;
     document.getElementById('glass-6').disabled = true;
     document.getElementById('glass-7').disabled = false;
     document.getElementById('glass-8').disabled = false;
@@ -113,6 +117,7 @@ glass5.addEventListener('click', () => {
 glass6.addEventListener('click', () => {
     real3.src = '../assets/jumpglass.png';
     document.getElementById('glass-5').disabled = true;
+    document.getElementById('glass-6').disabled = true;
     document.getElementById('glass-7').disabled = false;
     document.getElementById('glass-8').disabled = false;
     real1.src = '../assets/glass.png';
@@ -121,6 +126,7 @@ glass6.addEventListener('click', () => {
 
 glass7.addEventListener('click', () => {
     real4.src = '../assets/jumpglass.png';
+    document.getElementById('glass-7').disabled = true;
     document.getElementById('glass-8').disabled = true;
     document.getElementById('glass-9').disabled = false;
     document.getElementById('glass-10').disabled = false;
@@ -133,6 +139,7 @@ glass8.addEventListener('click', () => {
     tries--;
     fake4.src = '../assets/broken-glass.png';
     document.getElementById('glass-7').disabled = true;
+    document.getElementById('glass-8').disabled = true;
     document.getElementById('glass-9').disabled = false;
     document.getElementById('glass-10').disabled = false;
     if (tries <= 0) {
