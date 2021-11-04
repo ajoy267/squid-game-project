@@ -151,6 +151,7 @@ glass8.addEventListener('click', () => {
 glass9.addEventListener('click', () => {
     tries--;
     fake5.src = '../assets/broken-glass.png';
+    document.getElementById('glass-9').disabled = true;
     document.getElementById('glass-10').disabled = true;
     if (tries <= 0) {
         endGame.classList.remove('hidden');
@@ -158,6 +159,8 @@ glass9.addEventListener('click', () => {
         resultMessage.textContent = 'lose';
         triesLeft.textContent = tries;
     } else {
+        endGame.classList.remove('hidden');
+        resultMessage.classList.remove('hidden');
         resultMessage.textContent = 'win';
         triesLeft.textContent = tries;
     }
@@ -166,6 +169,7 @@ glass9.addEventListener('click', () => {
 glass10.addEventListener('click', () => {
     real5.src = '../assets/jumpglass.png';
     document.getElementById('glass-9').disabled = true;
+    document.getElementById('glass-10').disabled = true;
     real1.src = '../assets/glass.png';
     real2.src = '../assets/glass.png';
     real3.src = '../assets/glass.png';
@@ -195,5 +199,5 @@ endGame.addEventListener('click', () => {
         setUser(user);
     }
 
-window.location.replace('../game-over');
+    window.location.replace('../game-over');
 });
