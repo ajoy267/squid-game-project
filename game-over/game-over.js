@@ -11,7 +11,11 @@ const startOver = document.getElementById('start-over-btn');
 
 const user = getUser();
 
-balance.textContent = user.money;
+if (user.money > 0) {
+    balance.textContent = `-$${user.money}`;
+} else {
+    balance.textContent = `$${user.money}`;
+}
 gamesWon.textContent = user.games;
 gamesLost.textContent = user.gamesLost;
 

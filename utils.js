@@ -2,7 +2,7 @@ export function generateUser(formData){
     // This function will return a userObject using data from formData
     return {
         number: Math.ceil(Math.random() * 467),
-        money: -24000,
+        money: 24000,
         name: formData.get('name'),
         games: 0, 
         totalClicks: 0,
@@ -24,7 +24,11 @@ export function userProfile() {
     const user = getUser();
     
     const money = document.getElementById('money-total');
-    money.textContent = user.money;
+    if (user.money > 0) {
+        money.textContent = `-$${user.money}`;
+    } else {
+        money.textContent = `$${user.money}`;
+    }
     
     const number = document.getElementById('player-number');
     number.textContent = user.number;
