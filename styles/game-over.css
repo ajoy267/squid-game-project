@@ -11,9 +11,13 @@ body {
     text-align: center;
 }
 
-h1,
-h2 {
+h1{
     font-family: Azonix;
+    font-size: 3.5rem;
+}
+h2{
+    font-family: Azonix;
+    font-size: 3rem;
 }
 
 .hidden {
@@ -21,9 +25,16 @@ h2 {
 }
 
 button {
-    color: yellow;
-    border: 2px solid black;
-    background-color: black;
+    color: red;
+    border: 2px solid white;
+    background-color: white;
     border-radius: 5px;
     font-size: 1.2rem;
+    margin-top: 2%;
+}
+.stats{
+    font-size: 2.3rem;
+}
+p{
+    font-size: 2rem;
 }
