@@ -1,3 +1,14 @@
+@font-face {
+    font-family: Azonix;
+    src: url("../assets/Azonix.woff"),
+        url("../assets/Azonix.woff2") format("woff");
+}
+
+h1,
+h2 {
+    font-family: Azonix;
+}
+
 body {
     font-family: sans-serif;
 }
