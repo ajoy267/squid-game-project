@@ -23,11 +23,13 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 50px;
 }
 
 #player-img {
     height: auto;
     width: 100px;
+    margin-bottom: 100px;
 }
 
 main {
