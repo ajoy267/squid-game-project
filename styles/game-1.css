@@ -55,4 +55,12 @@ button {
 }
 input {
     font-size: 1.5rem;
+    background-color: black;
+    border: 3px solid black;
+    color: red;
+    border-radius: 9px;
+}
+p{
+    font-size: 1.1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
