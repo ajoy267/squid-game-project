@@ -46,3 +46,8 @@ export function openUser(){
     const number = document.getElementById('player-number');
     number.textContent = user.number;
 }
+
+export function getOddEven() {
+    let things = ['odd', 'even'];
+    return things[Math.floor(Math.random() * things.length)];
+}

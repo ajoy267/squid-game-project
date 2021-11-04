@@ -1,4 +1,4 @@
-import { getUser, setUser } from '../utils.js';
+import { getUser, setUser, getOddEven } from '../utils.js';
 
 const attemptSpan = document.getElementById('guesses-remain');
 const guessBtn = document.getElementById('guess');
@@ -16,8 +16,9 @@ correctGuessesSpan.textContent = correctGuesses;
 
 
 guessBtn.addEventListener('click', ()=> {
-    let things = ['odd', 'even'];
-    let thing = things[Math.floor(Math.random() * things.length)];
+    //let things = ['odd', 'even'];
+    //let thing = things[Math.floor(Math.random() * things.length)];
+    const thing = getOddEven();
 
     const oddGuess = odd.value;
     const evenGuess = even.value;
