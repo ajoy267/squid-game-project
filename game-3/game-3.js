@@ -195,7 +195,7 @@ endGame.addEventListener('click', () => {
         setUser(user);
     } else {
         user.games++;
-        user.money += 8000;
+        user.money -= 8000;
         setUser(user);
     }
 

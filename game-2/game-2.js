@@ -62,7 +62,7 @@ returnHome.addEventListener('click', () => {
         setUser(user);
     } else if (correctGuesses === 3) {
         user.games++;
-        user.money += 8000;
+        user.money -= 8000;
         setUser(user);
     }
     window.location.replace('../map');
