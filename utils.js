@@ -27,7 +27,7 @@ export function userProfile() {
     if (user.money > 0) {
         money.textContent = `-$${user.money}`;
     } else {
-        money.textContent = `$${user.money}`;
+        money.textContent = `$${Math.abs(user.money)}`;
     }
     
     const number = document.getElementById('player-number');

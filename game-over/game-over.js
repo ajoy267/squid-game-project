@@ -14,12 +14,12 @@ const user = getUser();
 if (user.money > 0) {
     balance.textContent = `-$${user.money}`;
 } else {
-    balance.textContent = `$${user.money}`;
+    balance.textContent = `$${Math.abs(user.money)}`;
 }
 gamesWon.textContent = user.games;
 gamesLost.textContent = user.gamesLost;
 
-if (user.games === 3) {
+if (user.games >= 3) {
     winSection.classList.remove('hidden');
     loseSection.classList.add('hidden');
 } else if (user.games < 3) {
