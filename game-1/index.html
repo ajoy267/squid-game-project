@@ -12,6 +12,11 @@
 <body>
     <header>
         <h2>Red Light, Green Light!</h2>
+        <p>In this game you will need to consecutively click
+            the "Run" button to move your charcter. If you click the button while the
+            light is red, you will lose a life and get reset. You have 
+            2 lives total... Don't trip :)
+        </p>
         <div>
             <img id="doll" class="hidden doll" src="../assets/doll.jpeg" alt="squid game doll">
         </div>
@@ -27,7 +32,7 @@
         </main>
 
         <footer>
-            <input id="run-btn" type="button" value="Click To Run">
+            <input id="run-btn" type="button" value="Run">
             <p>Tries Remaining: <span id="attempt-span"></span> </p>
             <p id="win-message" class='hidden'>Congratulations, you will head back to the sleeping quarters and begin game 2 shortly.</p>
             <p id="lose-message" class='hidden'>You have lost, good luck paying your debt now</p>
