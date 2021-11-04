@@ -2,8 +2,6 @@ import { getUser, setUser } from '../utils.js';
 
 const light = document.getElementById('light');
 const doll = document.getElementById('doll');
-const laser = document.getElementById('laser');
-// const imgObj = document.getElementById('player-img');
 const runBtn = document.getElementById('run-btn');
 const returnBtn = document.getElementById('return-home');
 let imgObj = document.getElementById('player-img');
@@ -27,10 +25,10 @@ function moveRight() {
 }
 window.onload = init;
 
-let currentColor = 'green'
+let currentColor = 'green';
 light.textContent = currentColor;
 
-let interval = setInterval(function() {
+setInterval(function() {
     if (currentColor === 'red') {
         currentColor = 'green';
         doll.src = '../assets/doll.jpeg';
@@ -50,7 +48,7 @@ let totalClicks = 0;
 runBtn.addEventListener('click', () => {
     moveRight();
     console.log('clicks');
-    totalClicks++
+    totalClicks++;
     if (totalClicks >= 35) {
         runBtn.disabled = true;
         returnBtn.classList.remove('hidden');
@@ -78,13 +76,13 @@ runBtn.addEventListener('click', () => {
 
 returnBtn.addEventListener('click', () => {
     const user = getUser();
-        if (totalAttempts === 0) {
-            user.gamesLost++;
-            setUser(user);
-        } else {
-            user.games++;
-            user.money += 8000;
-            setUser(user);
-        }
-        window.location.replace('../map');
-})
+    if (totalAttempts === 0) {
+        user.gamesLost++;
+        setUser(user);
+    } else {
+        user.games++;
+        user.money += 8000;
+        setUser(user);
+    }
+    window.location.replace('../map');
+});
