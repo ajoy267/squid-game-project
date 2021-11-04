@@ -1,8 +1,19 @@
+@font-face {
+    font-family: Azonix;
+    src: url("../assets/Azonix.woff"),
+        url("../assets/Azonix.woff2") format("woff");
+}
+
 body {
     background-image: url("../assets/marbles.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: Azonix;
 }
 
 .hidden {
