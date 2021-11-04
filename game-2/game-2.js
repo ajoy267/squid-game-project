@@ -16,8 +16,6 @@ correctGuessesSpan.textContent = correctGuesses;
 
 
 guessBtn.addEventListener('click', ()=> {
-    //let things = ['odd', 'even'];
-    //let thing = things[Math.floor(Math.random() * things.length)];
     const thing = getOddEven();
 
     const oddGuess = odd.value;

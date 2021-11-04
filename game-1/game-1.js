@@ -9,9 +9,7 @@ let imgObj = document.getElementById('player-img');
 const attemptSpan = document.getElementById('attempt-span');
 const winMessage = document.getElementById('win-message');
 const loseMessage = document.getElementById('lose-message');
-// write a function for a button that on click will -->
-// shift an img to the right each time the button is clicked.
-// --If button clicked while light red user lose/reset
+
 imgObj = null;
 
 function init() {
@@ -70,8 +68,6 @@ runBtn.addEventListener('click', () => {
             loseMessage.classList.remove('hidden');
         }
     } 
-    // if clicked while red, tries--
-    // span that tells you that you clicked during red
 });
 
 returnBtn.addEventListener('click', () => {
