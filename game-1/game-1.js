@@ -4,16 +4,14 @@ const light = document.getElementById('light');
 const doll = document.getElementById('doll');
 const runBtn = document.getElementById('run-btn');
 const returnBtn = document.getElementById('return-home');
-let imgObj = document.getElementById('player-img');
+const imgObj = document.getElementById('player-img');
 
 const attemptSpan = document.getElementById('attempt-span');
 const winMessage = document.getElementById('win-message');
 const loseMessage = document.getElementById('lose-message');
 
-imgObj = null;
 
 function init() {
-    imgObj = document.getElementById('player-img');
     imgObj.style.position = 'relative';
     imgObj.style.left = '0px';
 }
