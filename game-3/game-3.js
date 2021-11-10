@@ -1,4 +1,9 @@
 import { setUser, getUser } from '../utils.js';
+// you can simplify this by using a single class like glass for
+// all the glass elements and then using document.querySelectorAll
+// you would then loop through each element and add an 
+// event listener to it - you would need to logically determine which other
+// elements to disable but you could do that using the index
 
 const glass1 = document.getElementById('glass-1');
 const glass2 = document.getElementById('glass-2');
@@ -41,10 +46,11 @@ document.getElementById('glass-10').disabled = true;
 
 glass1.addEventListener('click', () => {
     real1.src = '../assets/jumpglass.png';
-    document.getElementById('glass-1').disabled = true;
-    document.getElementById('glass-2').disabled = true;
-    document.getElementById('glass-3').disabled = false;
-    document.getElementById('glass-4').disabled = false;
+    // you already have these elements above
+    glass1.disabled = true;
+    glass2.disabled = true;
+    glass3.disabled = false;
+    glass4.disabled = false;
     figure.src = '../assets/transparent.png';
 });
 
